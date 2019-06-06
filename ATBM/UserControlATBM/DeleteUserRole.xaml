@@ -1,0 +1,201 @@
+﻿<UserControl x:Class="ATBM.UserControlATBM.DeleteUserRole"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ATBM.UserControlATBM"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50px"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0"  Margin="0,0,1,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250"></RowDefinition>
+                    <RowDefinition Height="250"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <GroupBox  Header="Xóa user"  Margin="16">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition ></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Label>Tên tài khoản:</Label>
+                                <ComboBox materialDesign:HintAssist.Hint="Tên tài khoản"
+                                            IsEditable="True" Margin="10,10,10,10"
+                                            materialDesign:HintAssist.HintOpacity=".26">
+                                    <ComboBoxItem>
+                                        Apple
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Banana
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Pear
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Orange
+                                    </ComboBoxItem>
+                                </ComboBox>
+
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="120"
+                                ToolTip="Resource name: MaterialDesignRaisedLightDarkButton">
+                                    Xóa tài khoản
+                                </Button>
+                            </Grid>
+                        </Grid>
+
+                    </GroupBox>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <GroupBox  Header="Xóa vai trò"  Margin="16">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition ></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="113*"/>
+                                    <ColumnDefinition Width="236*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.ColumnSpan="2">Tên vai trò:</Label>
+                                <ComboBox materialDesign:HintAssist.Hint="Tên vai trò"
+                                            IsEditable="True" Margin="10,10,10,10"
+                                            materialDesign:HintAssist.HintOpacity=".26" Grid.ColumnSpan="2">
+                                    <ComboBoxItem>
+                                        Apple
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Accc
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Pear
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Orange
+                                    </ComboBoxItem>
+                                </ComboBox>
+
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="100"
+                                ToolTip="Resource name: MaterialDesignRaisedLightDarkButton">
+                                    Xóa vai trò
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Column="1"  Margin="1,0,0,0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="400"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <GroupBox  Header="Xóa user khỏi role"  Margin="16" >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition ></RowDefinition>
+                                <RowDefinition ></RowDefinition>
+                                <RowDefinition Height="50"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Label>Tên vai trò:</Label>
+                                <ComboBox materialDesign:HintAssist.Hint="Tên vai trò"
+                                            IsEditable="True" Margin="10,10,10,10"
+                                            materialDesign:HintAssist.HintOpacity=".26">
+                                    <ComboBoxItem>
+                                        Apple
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Banana
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Pear
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Orange
+                                    </ComboBoxItem>
+                                </ComboBox>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                
+
+                                <Label>Tên người bầu cử:</Label>
+                                <ComboBox materialDesign:HintAssist.Hint="Người bầu cử"
+                                            IsEditable="True" Margin="10,10,10,10"
+                                            materialDesign:HintAssist.HintOpacity=".26">
+                                    <ComboBoxItem>
+                                        Apple
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Banana
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Pear
+                                    </ComboBoxItem>
+                                    <ComboBoxItem>
+                                        Orange
+                                    </ComboBoxItem>
+                                </ComboBox>
+
+
+                            </Grid>
+                            <Grid Grid.Row="2">
+                                <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="100"
+                                ToolTip="Resource name: MaterialDesignRaisedLightDarkButton">
+                                    Xóa
+                                </Button>
+                            </Grid>
+
+                        </Grid>
+
+                    </GroupBox>
+
+
+                </Grid>
+                <Grid Grid.Row="1"></Grid>
+               
+            </Grid>
+
+        </Grid>
+
+        <Grid Margin="0,5,0,0" Grid.Row="1">
+            <!--<Border BorderBrush="BlueViolet" BorderThickness="2" />-->
+
+            <Button
+                Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                Width="160"
+                ToolTip="Resource name: MaterialDesignRaisedAccentButton"
+                materialDesign:RippleAssist.Feedback="#DD000000">
+                Quay về đăng nhập
+            </Button>
+        </Grid>
+
+    </Grid>
+</UserControl>
